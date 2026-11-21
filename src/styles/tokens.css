@@ -17,49 +17,57 @@
   --t-line: #d8d5cc;
   --t-accent: #1f5a4a;
   --t-on-accent: #ffffff;
+  --t-accent-2: #6b4e16;
+  --t-on-accent-2: #ffffff;
   --t-radius: 0.5rem;
   --t-font-display: ui-serif, Georgia, "Times New Roman", serif;
   --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-/* A: Field notes */
+/* A: Kitchen table. Warm paper, serif throughout, one deep berry red. */
 [data-direction="a"] {
-  --t-canvas: #f6f3ea;
-  --t-surface: #fffdf7;
-  --t-ink: #26221b;
-  --t-muted: #5c5547;
-  --t-line: #d9d1bd;
-  --t-accent: #7a3e1d;
+  --t-canvas: #f5efe3;
+  --t-surface: #fbf7ef;
+  --t-ink: #2a1f17;
+  --t-muted: #5e5043;
+  --t-line: #d6c8b0;
+  --t-accent: #8a2338;
   --t-on-accent: #ffffff;
+  --t-accent-2: #4f5d3c;
+  --t-on-accent-2: #ffffff;
   --t-radius: 0.125rem;
-  --t-font-display: ui-serif, Georgia, "Times New Roman", serif;
-  --t-font-body: ui-serif, Georgia, "Times New Roman", serif;
+  --t-font-display: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, Georgia, serif;
+  --t-font-body: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, Georgia, serif;
 }
 
-/* B: Shop window */
+/* B: After dark. Near black, tight heavy sans, ember for the one action, violet for a match. */
 [data-direction="b"] {
-  --t-canvas: #f4f7f5;
-  --t-surface: #ffffff;
-  --t-ink: #14211c;
-  --t-muted: #4a5a53;
-  --t-line: #cfdad4;
-  --t-accent: #17604a;
-  --t-on-accent: #ffffff;
-  --t-radius: 0.875rem;
-  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t-canvas: #0e0d10;
+  --t-surface: #1b1920;
+  --t-ink: #f4f1ec;
+  --t-muted: #b4aeb9;
+  --t-line: #34303c;
+  --t-accent: #ff6a2b;
+  --t-on-accent: #1a0d05;
+  --t-accent-2: #a78bfa;
+  --t-on-accent-2: #150f26;
+  --t-radius: 1.25rem;
+  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* C: Poster */
+/* C: Big sky. Warm white, cobalt and sun yellow, thick navy outlines, rounded heavy type. */
 [data-direction="c"] {
-  --t-canvas: #14143a;
-  --t-surface: #1f1f52;
-  --t-ink: #fdfcf5;
-  --t-muted: #c9c8e6;
-  --t-line: #45457f;
-  --t-accent: #ffd447;
-  --t-on-accent: #14143a;
-  --t-radius: 0;
-  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t-canvas: #fffaf0;
+  --t-surface: #ffffff;
+  --t-ink: #14213d;
+  --t-muted: #3a4763;
+  --t-line: #14213d;
+  --t-accent: #1f4fd1;
+  --t-on-accent: #ffffff;
+  --t-accent-2: #ffc93c;
+  --t-on-accent-2: #14213d;
+  --t-radius: 1.5rem;
+  --t-font-display: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", "Nunito", system-ui, sans-serif;
+  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }

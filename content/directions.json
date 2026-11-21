@@ -1,17 +1,17 @@
 [
   {
     "id": "a",
-    "name": "Field notes",
-    "idea": "Quiet and editorial. Reads like a well-kept notebook: one column, generous type, the story first."
+    "name": "Kitchen table",
+    "idea": "Like being introduced by someone who knows you both. Unhurried and warm, words first, with profiles you read instead of swipe."
   },
   {
     "id": "b",
-    "name": "Shop window",
-    "idea": "Practical and direct. What they offer is on show straight away, with a clear next step beside it."
+    "name": "After dark",
+    "idea": "A sharp modern app that sits comfortably next to anything else on your phone. Dark, photo-led, with one ember-bright color."
   },
   {
     "id": "c",
-    "name": "Poster",
-    "idea": "Bold and confident. One big statement, strong color, very little else on the first screen."
+    "name": "Big sky",
+    "idea": "Bright, open and a little cheeky, like the name. Big friendly type and bold blocks of color."
   }
 ]

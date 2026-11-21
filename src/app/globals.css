@@ -9,6 +9,8 @@
   --color-line: var(--t-line);
   --color-accent: var(--t-accent);
   --color-on-accent: var(--t-on-accent);
+  --color-accent-2: var(--t-accent-2);
+  --color-on-accent-2: var(--t-on-accent-2);
   --radius-token: var(--t-radius);
   --font-display: var(--t-font-display);
   --font-body: var(--t-font-body);
