@@ -17,7 +17,7 @@
   "deploy": {
     "host": "vercel",
     "production": "",
-    "review": ""
+    "review": "https://rezmatch.spennington.dev"
   },
   "merge": {
     "mode": "steven-merges"

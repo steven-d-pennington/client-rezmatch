@@ -1,6 +1,6 @@
 {
-  "heading": "Have a look and tell us what you like",
-  "intro": "These are early looks, not finished pages. The words and pictures are stand-ins. Open each one on your phone, then tell us which feels most like you. \"Not sure\" is a fine answer too.",
+  "heading": "Three early looks for RezMatch",
+  "intro": "These are early looks, not a finished app. The people, words and pictures are stand-ins. Open each one on your phone, then tell us which feels most like RezMatch. \"Not sure\" is a fine answer too.",
   "replyTo": {
     "name": "Steven",
     "sms": "",
@@ -9,16 +9,39 @@
   "questions": [
     {
       "id": "look",
-      "label": "Which look feels most like you?",
+      "label": "Which look feels most like RezMatch?",
       "optionsFrom": "directions"
     },
     {
-      "id": "words",
-      "label": "How should the words sound?",
+      "id": "headline",
+      "label": "Which line sounds most like RezMatch?",
       "options": [
-        { "id": "warm", "label": "Warm and chatty" },
-        { "id": "plain", "label": "Plain and to the point" },
-        { "id": "polished", "label": "Polished and formal" }
+        {
+          "id": "knows",
+          "label": "Meet someone who knows where you're from."
+        },
+        {
+          "id": "forus",
+          "label": "Dating, for us."
+        },
+        {
+          "id": "skip",
+          "label": "Find your match. Skip the explaining."
+        }
+      ]
+    },
+    {
+      "id": "pace",
+      "label": "How should meeting people feel?",
+      "options": [
+        {
+          "id": "slow",
+          "label": "Slow: read one profile at a time"
+        },
+        {
+          "id": "quick",
+          "label": "Quick: swipe through lots of people"
+        }
       ]
     }
   ],

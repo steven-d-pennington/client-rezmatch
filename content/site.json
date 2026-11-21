@@ -1,23 +1,64 @@
 {
   "name": "RezMatch",
-  "tagline": "[Tagline: one sentence the client approves]",
-  "intro": "[Two or three sentences in the client's own voice about what they do and who it is for.]",
-  "offers": [
+  "tagline": "A dating app for Native people. Early look, not yet open.",
+  "intro": "RezMatch is a dating app for Native people. [Who is behind it and why, in the founder's own words.]",
+  "headlines": {
+    "a": "Meet someone who knows where you're from.",
+    "b": "Dating, for us.",
+    "c": "Find your match. Skip the explaining."
+  },
+  "cta": "Get early access",
+  "steps": [
     {
-      "title": "[First thing they offer]",
-      "body": "[One or two plain sentences about it.]"
+      "title": "Say where you're from",
+      "body": "Your profile starts with you, in your own words. [Which details a profile asks for is still to be decided.]"
     },
     {
-      "title": "[Second thing they offer]",
-      "body": "[One or two plain sentences about it.]"
+      "title": "Meet people who get it",
+      "body": "No explaining your family, your home or your calendar to someone who has never been."
     },
     {
-      "title": "[Third thing they offer]",
-      "body": "[One or two plain sentences about it.]"
+      "title": "You decide who sees you",
+      "body": "[Privacy choices, such as staying hidden from your home community, are still to be decided.]"
     }
   ],
-  "contact": {
-    "heading": "Get in touch",
-    "body": "[How the client wants to be reached.]"
+  "members": [
+    {
+      "name": "Jordan",
+      "age": 29,
+      "nation": "[Nation]",
+      "place": "[Home community]",
+      "about": "[A few lines the member writes about themselves.]",
+      "prompts": [
+        { "question": "A perfect Saturday", "answer": "[The member's answer]" },
+        { "question": "Looking for", "answer": "[The member's answer]" }
+      ]
+    },
+    {
+      "name": "Tayla",
+      "age": 33,
+      "nation": "[Nation]",
+      "place": "[Town or region]",
+      "about": "[A few lines the member writes about themselves.]",
+      "prompts": []
+    },
+    {
+      "name": "Rae",
+      "age": 27,
+      "nation": "[Nation]",
+      "place": "[Town or region]",
+      "about": "[A few lines the member writes about themselves.]",
+      "prompts": []
+    }
+  ],
+  "chat": [
+    { "from": "Jordan", "mine": false, "text": "Hi! Your profile made me laugh. Where's home for you?" },
+    { "from": "You", "mine": true, "text": "[Home community]. You?" },
+    { "from": "Jordan", "mine": false, "text": "Not far, about two hours. Coffee next time you're in town?" }
+  ],
+  "sampleNote": "Sample members and messages. Not real people.",
+  "about": {
+    "heading": "Who is behind RezMatch",
+    "body": "[The founder, his nation, and why he is building this, in his words.]"
   }
 }
