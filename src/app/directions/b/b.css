@@ -146,7 +146,7 @@
 .b-footer .b-wrap { padding-block: 28px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--t-muted); }
 .b-footer .b-mark { font-size: 20px; color: var(--t-ink); }
 
-@keyframes b-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes b-up { from { transform: translateY(24px); } to { transform: none; } }
 @keyframes b-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @keyframes b-ring { 0% { transform: scale(0.6); opacity: 0.9; } 100% { transform: scale(1.9); opacity: 0; } }
 @keyframes b-hover { 0%, 100% { transform: translateY(0) rotate(4deg); } 50% { transform: translateY(-10px) rotate(4deg); } }

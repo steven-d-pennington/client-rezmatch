@@ -1,4 +1,5 @@
 /* Direction A, Letterpress. Colors come from tokens.css ([data-direction="a"]). */
+/* Entrance motion moves things but never fades text: a half-faded line fails contrast while it animates. */
 
 [data-direction="a"] {
   --a-gutter: clamp(20px, 5vw, 64px);
@@ -132,7 +133,7 @@
 .a-footer .a-wrap { padding-block: 28px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px; color: var(--t-muted); }
 .a-footer .a-mark { font-size: 20px; color: var(--t-ink); font-weight: 400; }
 
-@keyframes a-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes a-up { from { transform: translateY(18px); } to { transform: none; } }
 @keyframes a-drift { 0%, 100% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(2.5deg) scale(1.02); } }
 @keyframes a-float { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(-1.4deg); } }
 @keyframes a-pin { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.6); opacity: 0; } }
