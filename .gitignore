@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# generated on every build by scripts/factory/write-version.mjs
+/public/version.json
+
+# tests
+/coverage
+/playwright-report/
+/test-results/
+
+# env files: only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# client media stays out of git: keep it in Drive, private R2 or this ignored folder
+/work/
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*

@@ -1,0 +1,26 @@
+{
+  "heading": "Have a look and tell us what you like",
+  "intro": "These are early looks, not finished pages. The words and pictures are stand-ins. Open each one on your phone, then tell us which feels most like you. \"Not sure\" is a fine answer too.",
+  "replyTo": {
+    "name": "Steven",
+    "sms": "",
+    "email": ""
+  },
+  "questions": [
+    {
+      "id": "look",
+      "label": "Which look feels most like you?",
+      "optionsFrom": "directions"
+    },
+    {
+      "id": "words",
+      "label": "How should the words sound?",
+      "options": [
+        { "id": "warm", "label": "Warm and chatty" },
+        { "id": "plain", "label": "Plain and to the point" },
+        { "id": "polished", "label": "Polished and formal" }
+      ]
+    }
+  ],
+  "noteLabel": "Anything you loved, or anything that felt wrong?"
+}

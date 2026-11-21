@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "templateVersion": "0.2.0",
+  "client": {
+    "slug": "rezmatch",
+    "name": "RezMatch",
+    "tier": "L"
+  },
+  "launched": false,
+  "checks": {
+    "gate": "npm run check",
+    "e2e": "npm run test:e2e"
+  },
+  "review": {
+    "reviewer": "claude-session"
+  },
+  "deploy": {
+    "host": "vercel",
+    "production": "",
+    "review": ""
+  },
+  "merge": {
+    "mode": "steven-merges"
+  },
+  "notes": ""
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-canvas: var(--t-canvas);
+  --color-surface: var(--t-surface);
+  --color-ink: var(--t-ink);
+  --color-muted: var(--t-muted);
+  --color-line: var(--t-line);
+  --color-accent: var(--t-accent);
+  --color-on-accent: var(--t-on-accent);
+  --radius-token: var(--t-radius);
+  --font-display: var(--t-font-display);
+  --font-body: var(--t-font-body);
+}
+
+html {
+  background: var(--t-canvas);
+  color: var(--t-ink);
+  font-family: var(--t-font-body);
+}
+
+/* A direction repaints its own area, so the whole page takes on its feel. */
+[data-direction] {
+  background: var(--t-canvas);
+  color: var(--t-ink);
+  font-family: var(--t-font-body);
+}
+
+:focus-visible {
+  outline: 3px solid var(--t-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

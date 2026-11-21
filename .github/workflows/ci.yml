@@ -1,0 +1,64 @@
+name: CI
+
+# Checks run in agent sessions, not here (factory decision D-013): this repo
+# spends no GitHub Actions minutes unless a person starts this workflow by hand
+# from the Actions tab. The record for a pull request is the "Gate evidence"
+# block from `npm run evidence`, and the reviewer's own run of the same command.
+# `npm run check:factory` fails if an automatic trigger is added to any workflow.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      # Factory contract, types, lint, unit and policy tests, production build.
+      - name: Check
+        run: npm run check
+
+      - name: Read Playwright version
+        id: pw
+        run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        id: pw-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}
+      - name: Install Chromium (retries, because apt mirrors on hosted runners sometimes fail)
+        run: |
+          for attempt in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "attempt $attempt failed"
+            sleep $((attempt * 20))
+            sudo apt-get update || echo "apt-get update failed, retrying anyway"
+          done
+          exit 1
+
+      # Browser tests against the production build. No secrets needed: outside services are mocked.
+      - name: Browser tests
+        run: npm run test:e2e
+
+      - name: Keep the evidence when something fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-evidence
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14

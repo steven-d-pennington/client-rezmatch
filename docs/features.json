@@ -1,0 +1,13 @@
+[
+  {
+    "id": "F-001",
+    "title": "Review page with Your picks",
+    "status": "passing",
+    "acceptance": [
+      "The review page lists every look with a link that opens it, and each look links back.",
+      "Choosing answers builds one line of text that the Copy my picks button puts on the clipboard.",
+      "Choices and the note are still there after the page is reloaded."
+    ],
+    "e2e": "e2e/review.spec.ts"
+  }
+]

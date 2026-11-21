@@ -1,0 +1,32 @@
+name: Deploy verify
+
+# Merged is not deployed. This waits until production serves the commit (via
+# /version.json) and goes red if it never does. It runs only when a person
+# starts it by hand (factory decision D-013: no automatic Actions minutes).
+# After every merge the agent runs the same check itself: `npm run verify:deploy`.
+# It skips quietly until factory.json has deploy.production.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Wait for production to serve this commit
+        run: |
+          set +e
+          node scripts/factory/verify-deploy.mjs --sha "$GITHUB_SHA" --timeout 600
+          code=$?
+          if [ "$code" -eq 2 ]; then
+            echo "::notice::No production URL configured yet, nothing to verify."
+            exit 0
+          fi
+          exit "$code"

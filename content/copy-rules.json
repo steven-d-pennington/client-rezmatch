@@ -1,0 +1,6 @@
+{
+  "banned": [
+    { "text": "—", "why": "No em dashes in client-facing copy. Use a comma, a period or parentheses." },
+    { "text": "lorem ipsum", "why": "Use the client's own words, or a [bracketed] note saying what is needed." }
+  ]
+}

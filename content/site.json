@@ -1,0 +1,23 @@
+{
+  "name": "RezMatch",
+  "tagline": "[Tagline: one sentence the client approves]",
+  "intro": "[Two or three sentences in the client's own voice about what they do and who it is for.]",
+  "offers": [
+    {
+      "title": "[First thing they offer]",
+      "body": "[One or two plain sentences about it.]"
+    },
+    {
+      "title": "[Second thing they offer]",
+      "body": "[One or two plain sentences about it.]"
+    },
+    {
+      "title": "[Third thing they offer]",
+      "body": "[One or two plain sentences about it.]"
+    }
+  ],
+  "contact": {
+    "heading": "Get in touch",
+    "body": "[How the client wants to be reached.]"
+  }
+}

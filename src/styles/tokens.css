@@ -1,0 +1,65 @@
+/*
+ * Design tokens. This is the only file in src/ that may contain literal colors
+ * (tests/policy/tokens.test.ts enforces it). Components use the Tailwind names
+ * mapped in src/app/globals.css: bg-canvas, text-ink, text-muted, border-line,
+ * bg-accent, text-on-accent, bg-surface, font-display, font-body.
+ *
+ * Each mockup direction overrides the same tokens under [data-direction="x"],
+ * so a direction can change the whole feel without touching shared components.
+ * After the client picks, move the winning values to :root and delete the rest.
+ */
+
+:root {
+  --t-canvas: #faf9f6;
+  --t-surface: #ffffff;
+  --t-ink: #1c1c1a;
+  --t-muted: #55554e;
+  --t-line: #d8d5cc;
+  --t-accent: #1f5a4a;
+  --t-on-accent: #ffffff;
+  --t-radius: 0.5rem;
+  --t-font-display: ui-serif, Georgia, "Times New Roman", serif;
+  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* A: Field notes */
+[data-direction="a"] {
+  --t-canvas: #f6f3ea;
+  --t-surface: #fffdf7;
+  --t-ink: #26221b;
+  --t-muted: #5c5547;
+  --t-line: #d9d1bd;
+  --t-accent: #7a3e1d;
+  --t-on-accent: #ffffff;
+  --t-radius: 0.125rem;
+  --t-font-display: ui-serif, Georgia, "Times New Roman", serif;
+  --t-font-body: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+/* B: Shop window */
+[data-direction="b"] {
+  --t-canvas: #f4f7f5;
+  --t-surface: #ffffff;
+  --t-ink: #14211c;
+  --t-muted: #4a5a53;
+  --t-line: #cfdad4;
+  --t-accent: #17604a;
+  --t-on-accent: #ffffff;
+  --t-radius: 0.875rem;
+  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* C: Poster */
+[data-direction="c"] {
+  --t-canvas: #14143a;
+  --t-surface: #1f1f52;
+  --t-ink: #fdfcf5;
+  --t-muted: #c9c8e6;
+  --t-line: #45457f;
+  --t-accent: #ffd447;
+  --t-on-accent: #14143a;
+  --t-radius: 0;
+  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}

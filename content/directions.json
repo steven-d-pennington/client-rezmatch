@@ -1,0 +1,17 @@
+[
+  {
+    "id": "a",
+    "name": "Field notes",
+    "idea": "Quiet and editorial. Reads like a well-kept notebook: one column, generous type, the story first."
+  },
+  {
+    "id": "b",
+    "name": "Shop window",
+    "idea": "Practical and direct. What they offer is on show straight away, with a clear next step beside it."
+  },
+  {
+    "id": "c",
+    "name": "Poster",
+    "idea": "Bold and confident. One big statement, strong color, very little else on the first screen."
+  }
+]

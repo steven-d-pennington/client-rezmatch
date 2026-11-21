@@ -1,0 +1,10 @@
+---
+description: Factory rules for every agent working in this repo
+alwaysApply: true
+---
+
+This repo follows Steven Pennington's software factory. The rules are in `AGENTS.md` at the repo root, inside the block marked `factory:begin` and `factory:end`. Read `AGENTS.md` and `STATUS.md` before doing anything, and follow them.
+
+The short version: work on a branch, one task per pull request, commit and run `npm run evidence` before opening it and paste what it prints (nothing runs the checks for you), never merge, never contact a client, never weaken a check, and say in the pull request what you did not verify.
+
+Stage instructions are in `.factory/playbook/`. The same steps are available as commands in `.cursor/commands/`.
