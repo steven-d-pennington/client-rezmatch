@@ -28,7 +28,17 @@ Unknown until the call. The three looks each bet on a different word: **warm**, 
 
 Assumed: someone hears about RezMatch from a friend, a relative or a social post, opens the link on a phone, and decides in a few seconds whether this is for them and whether it is real. The first screen says who it is for and offers one next step. Below it, a taste of the app in that style: a profile, browsing, a conversation.
 
-## Three directions
+## Round two (2026-11-21)
+
+Steven found round one too basic. Round two keeps the three bets (warm, sharp, bright) and the rules above, and raises the craft: real fonts, layered layouts, motion, and more of the app shown. Designed first on a Claude Design canvas (https://claude.ai/artifact/6m2cceg1T7k72jSKvTvr5o), then rebuilt in `src/app/directions/`. See D-003.
+
+| | Name | What changed |
+|---|---|---|
+| A | Letterpress | Fraunces over Newsreader on bone paper, oxblood and sage. A drawn topographic map (invented contours) with a floating profile card, a magazine-style profile spread, a dark "Two hours is close" band with a drive-time ruler, first messages as letters. |
+| B | After dark | Space Grotesk over Inter on near black with grain. Two glowing phone screens (profile, and "It's a match" with a pulse), a scrolling ribbon of prompts, a drive-time range picker over sample members, a live-looking chat. |
+| C | Big sky | Bricolage Grotesque over DM Sans, cobalt, sun and coral with thick navy outlines and hard shadows. Sticker highlights in the headline, bobbing profile stickers, a tilted scrolling ribbon, a prompt picker you can click (pick three). |
+
+## Round one: three directions
 
 | | Name | The idea in one sentence | What you would remember | Type and color, in words |
 |---|---|---|---|---|

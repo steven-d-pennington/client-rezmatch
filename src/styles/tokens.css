@@ -24,50 +24,104 @@
   --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-/* A: Kitchen table. Warm paper, serif throughout, one deep berry red. */
+/* A: Letterpress (round 2). Bone paper, Fraunces over Newsreader, oxblood and sage. */
 [data-direction="a"] {
-  --t-canvas: #f5efe3;
-  --t-surface: #fbf7ef;
-  --t-ink: #2a1f17;
-  --t-muted: #5e5043;
-  --t-line: #d6c8b0;
-  --t-accent: #8a2338;
-  --t-on-accent: #ffffff;
-  --t-accent-2: #4f5d3c;
-  --t-on-accent-2: #ffffff;
+  --t-canvas: #f3ece0;
+  --t-surface: #fbf7f0;
+  --t-ink: #22180f;
+  --t-muted: #6a5b4c;
+  --t-line: #d9ccb8;
+  --t-accent: #7e1f2e;
+  --t-on-accent: #fbf7f0;
+  --t-accent-2: #5b6b4e;
+  --t-on-accent-2: #fbf7f0;
   --t-radius: 0.125rem;
-  --t-font-display: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, Georgia, serif;
-  --t-font-body: "Iowan Old Style", "Palatino Linotype", Palatino, ui-serif, Georgia, serif;
+  --t-font-display: var(--f-fraunces), Georgia, serif;
+  --t-font-body: var(--f-newsreader), Georgia, serif;
+  --a-body: #4a3d31;
+  --a-accent-hover: #5a1420;
+  --a-contour: #b9a88f;
+  --a-hatch-1: #efe6d6;
+  --a-hatch-2: #e6dac6;
+  --a-hatch-3: #e8ddca;
+  --a-dash: #a8977f;
+  --a-chip-line: #cdbfa9;
+  --a-label-ink: #5b4d3f;
+  --a-letter-2: #eadfcb;
+  --a-letter-2-line: #d3c3aa;
+  --a-letter-2-meta: #5e4f40;
+  --a-night-text: #d4c7b5;
+  --a-night-strong: #e6dacb;
+  --a-night-line: #5e5040;
+  --a-night-rule: #8a7a66;
+  --a-rose: #e9a9b3;
+  --a-rose-halo: rgba(233, 169, 179, 0.18);
+  --a-input: #ffffff;
+  --a-placeholder: #7a6a5a;
+  --a-card-shadow: 0 1px 0 #d9ccb8, 0 24px 48px -24px rgba(34, 24, 15, 0.45);
+  --a-letter-shadow: 0 14px 30px -22px rgba(34, 24, 15, 0.5);
 }
 
-/* B: After dark. Near black, tight heavy sans, ember for the one action, violet for a match. */
+/* B: After dark (round 2). Near black with grain, Space Grotesk over Inter, ember for the one action, violet for a match. */
 [data-direction="b"] {
-  --t-canvas: #0e0d10;
-  --t-surface: #1b1920;
-  --t-ink: #f4f1ec;
-  --t-muted: #b4aeb9;
-  --t-line: #34303c;
-  --t-accent: #ff6a2b;
-  --t-on-accent: #1a0d05;
-  --t-accent-2: #a78bfa;
-  --t-on-accent-2: #150f26;
-  --t-radius: 1.25rem;
-  --t-font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --t-canvas: #0b0a0e;
+  --t-surface: #16141b;
+  --t-ink: #f5f2ee;
+  --t-muted: #a9a3b1;
+  --t-line: #2a2631;
+  --t-accent: #ff6b2c;
+  --t-on-accent: #0b0a0e;
+  --t-accent-2: #c4b2fc;
+  --t-on-accent-2: #0b0a0e;
+  --t-radius: 1.75rem;
+  --t-font-display: var(--f-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --t-font-body: var(--f-inter), ui-sans-serif, system-ui, sans-serif;
+  --b-soft: #c9c3d1;
+  --b-band: #121016;
+  --b-raised: #1d1a23;
+  --b-chip: #221f29;
+  --b-edge: #3a3542;
+  --b-dim: #4a4553;
+  --b-hatch-1: #1e1b24;
+  --b-hatch-2: #17151c;
+  --b-hatch-3: #1a1820;
+  --b-hatch-4: #141218;
+  --b-hatch-5: #24212b;
+  --b-hatch-6: #2b2433;
+  --b-hatch-7: #211c28;
+  --b-on-ember-soft: #2a1406;
+  --b-link-hover: #ffb08c;
+  --b-placeholder: #8c8696;
+  --b-glow: radial-gradient(closest-side, rgba(255, 107, 44, 0.28), rgba(255, 107, 44, 0) 70%);
+  --b-glow-strong: radial-gradient(closest-side, rgba(255, 107, 44, 0.35), rgba(255, 107, 44, 0) 70%);
+  --b-fade: linear-gradient(to top, #0b0a0e 55%, rgba(11, 10, 14, 0));
+  --b-phone-shadow: 0 50px 100px -30px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 107, 44, 0.08);
+  --b-phone-shadow-back: 0 40px 80px -30px rgba(0, 0, 0, 0.8);
+  --b-like-glow: 0 0 30px rgba(255, 107, 44, 0.5);
 }
 
-/* C: Big sky. Warm white, cobalt and sun yellow, thick navy outlines, rounded heavy type. */
+/* C: Big sky (round 2). Warm white, Bricolage Grotesque over DM Sans, cobalt, sun and coral with thick navy outlines. */
 [data-direction="c"] {
-  --t-canvas: #fffaf0;
+  --t-canvas: #fff8ec;
   --t-surface: #ffffff;
-  --t-ink: #14213d;
-  --t-muted: #3a4763;
-  --t-line: #14213d;
-  --t-accent: #1f4fd1;
+  --t-ink: #13204a;
+  --t-muted: #3a4672;
+  --t-line: #13204a;
+  --t-accent: #2350e0;
   --t-on-accent: #ffffff;
-  --t-accent-2: #ffc93c;
-  --t-on-accent-2: #14213d;
-  --t-radius: 1.5rem;
-  --t-font-display: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold", "Nunito", system-ui, sans-serif;
-  --t-font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --t-accent-2: #ffc83d;
+  --t-on-accent-2: #13204a;
+  --t-radius: 1.75rem;
+  --t-font-display: var(--f-bricolage), ui-rounded, system-ui, sans-serif;
+  --t-font-body: var(--f-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --c-coral: #ff7a59;
+  --c-on-navy: #fff8ec;
+  --c-on-navy-soft: #d9deee;
+  --c-hatch-sun-1: #ffe7a8;
+  --c-hatch-sun-2: #ffdb80;
+  --c-hatch-coral-1: #ffd0c2;
+  --c-hatch-coral-2: #ffbca8;
+  --c-hatch-blue-1: #d3ddff;
+  --c-hatch-blue-2: #bfcdff;
+  --c-placeholder: #5a6488;
 }
